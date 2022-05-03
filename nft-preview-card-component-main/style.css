@@ -68,7 +68,7 @@ body{
         left: 0%;
         right: 0%;
         bottom: 0%;
-        background-color: var(--cyan);
+        background-color: hsla(178.1, 100%, 50%, 0.25);;
         width: 100%;
         border-radius: 10px;
         opacity: 0;
@@ -83,7 +83,7 @@ body{
         bottom: 0;
         left: 0;
         right: 0;
-        width: 25%;
+        width: 15%;
         margin: auto;
         
     }
@@ -236,7 +236,7 @@ main {
         left: 0%;
         right: 0%;
         bottom: 0%;
-        background-color: var(--cyan);
+        background-color: hsla(178.1, 100%, 50%, 0.25);
         width: 100%;
         border-radius: 10px;
         opacity: 0;
@@ -250,13 +250,13 @@ main {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 25%;
+    width: 15%;
     margin: auto;
     
 }
 
 .card-img:hover .card-img-overlay{
-    opacity: 0.5;
+    opacity: 1;
 }
 
  /* Text area of the NFT Card */
