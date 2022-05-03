@@ -187,3 +187,168 @@ body{
     }
 
 }
+
+/* Desktop View: main container holding the card on page */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    height: auto;
+    width: 20rem;
+    margin: auto;
+    
+}
+
+/* Desktop View: Card Styling */
+.card{
+    background-color: var(--card-bg);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+/* Desktop View: Card Main Image */
+.card-img {
+    position: relative;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.card-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-img-overlay {
+    position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        background-color: var(--cyan);
+        width: 100%;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        cursor: pointer;
+}
+
+.card-img-overlay-content img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 25%;
+    margin: auto;
+    
+}
+
+.card-img:hover .card-img-overlay{
+    opacity: 0.5;
+}
+
+ /* Text area of the NFT Card */
+ .card-text{
+    font-size: .75rem;
+}
+
+.card-text h1{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    padding: 0;
+    color: var(--white);
+    transition: color 0.25s ease-in;
+    cursor: pointer;
+    
+
+}
+
+.card-text h1:hover{
+    font-size: 1.2rem;
+    color: var(--cyan);
+    
+}
+
+.card-text p{
+    color: var(--soft-blue);
+
+}
+.card-text > p{
+    font-weight:300;
+    font-size: 0.9rem; 
+    margin: 0 0 1rem 0;
+}
+.card-nft-info {
+    color: var(--soft-blue);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--line);
+    padding-bottom: 1rem;
+
+}
+
+/* Eth section of NFT Card Info */
+
+.card-nft-info-eth {
+    display: flex;
+    align-items: center;
+    color: var(--cyan);
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.card-nft-info-eth img{
+    padding-right: 0.5rem;
+}
+
+/* Time Left section of nft card info */
+.card-nft-info-time{
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.card-nft-info-time img{
+    padding-right: 0.5rem;
+}
+.card-user{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0 0;
+}
+.card-user img{
+    height: 30px;
+    border: solid 1px var(--white);
+    border-radius: 40px;
+    margin-right: 1rem;
+}
+.card-user span{
+    color: var(--soft-blue);
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.card-user span span {
+    color: var(--white);
+    transition: color 0.25s ease-in;
+    cursor: pointer;
+}
+
+.card-user span span:hover {
+    color: var(--cyan);
+    
+}
