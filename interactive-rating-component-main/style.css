@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --darker-blue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+html{
+    font-size: 15px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 375px){
+
+    body{
+        background-color: var(--darker-blue);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Inital Rating Card */
+    .rating {
+        background-color: var(--dark-blue);
+    }
+
+    /* Thank you Card*/
+    .thank-you{
+        /*background-image: linear-gradient(var(--medium-grey),var(--dark-blue));*/
+        background-color: var(--dark-blue);
+        width: 100%;
+        height: 45vh;
+        margin: 1.5rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+        text-align: center;
+        border-radius: 1rem;
+        color: var(--white);
+    }
+
+    .thank-you .thank-you-image{
+        
+        
+    }
+    .thank-you .thank-you-image img {
+        width: 100%;
+        height: auto;
+        
+    }
+    .thank-you .thank-you-rating{
+        color: var(--orange);
+        font-weight: 400;
+        width: auto;
+        padding: .5rem .5rem;
+        border-radius: 2rem;
+        background-color: hsla(216, 12%, 54%,0.25);
+        
+        
+    }
+
+
+
+    .thank-you-text h1{
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .thank-you-text p{
+        font-size: 1rem;
+        color: var(--light-grey);
+    }
+
+}
+body{
+    background-color: var(--darker-blue);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you{
+    /*background-image: linear-gradient(var(--medium-grey),var(--dark-blue));*/
+    background-color: var(--dark-blue);
+    width: 375px;
+    height: 45vh;
+    margin: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+    border-radius: 1rem;
+    color: var(--white);
+}
+
+.thank-you .thank-you-image{
+    
+    
+}
+.thank-you .thank-you-image img {
+    width: 100%;
+    height: auto;
+    
+}
+.thank-you .thank-you-rating{
+    color: var(--orange);
+    font-weight: 400;
+    width: auto;
+    padding: .5rem .5rem;
+    border-radius: 2rem;
+    background-color: hsla(216, 12%, 54%,0.25);
+    
+    
+}
+
+
+
+.thank-you-text h1{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.thank-you-text p{
+    font-size: 1rem;
+    color: var(--light-grey);
+    padding: 0 1.15rem;
+}
